@@ -1,0 +1,69 @@
+/* GENERAL */
+:root{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    background-color: #555;
+    font-size: 1.6rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* SWITCH */
+#checkbox{
+    display: none;
+}
+
+.switch{
+    position: relative;
+    margin: 2rem;
+    width: 10rem;
+    height: 5rem;
+    background: blue;
+    border-radius: 2.5rem;
+}
+
+.slider{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: red;
+    transform: rotate(45deg);
+    transition: all .5s ease-in-out;
+}
+
+#checkbox:checked ~ .switch > .slider{
+    transform: translateX(5rem) rotateZ(225deg);
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 5rem;
+    padding: 1rem;
+    border: 1px solid yellow;
+}
+
+/* .box2{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+} */
+
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
