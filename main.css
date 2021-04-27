@@ -19,7 +19,7 @@ body{
     padding: 2rem;
 }
 
-/* SWITCH ONE with 2 DIVs */
+/* SWITCH ONE and TWO */
 
 /* hide default checkbox */
 #checkbox,
@@ -36,6 +36,8 @@ body{
     background: blue;
     border-radius: 2.5rem;
 }
+
+/* SWITCH ONE with 2 DIVs */
 
 /* moving part */
 .slider{
@@ -56,10 +58,7 @@ body{
 
 /* SWITCH TWO with ::before */
 
-/* hiding on line 27 */
-
-/* background same as switch one (line 28-35) */
-
+/* moving part */
 .switch2::before{
     content: "";
     position: absolute;
@@ -72,6 +71,7 @@ body{
     transition: all .5s;
 }
 
+/* movement */
 #checkbox2:checked ~ .switch2::before{
     transform: translateX(5rem);
 }
